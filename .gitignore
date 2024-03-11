@@ -46,3 +46,15 @@ wp-config.php
 # Note: If you wish to whitelist themes,
 # uncomment the next line
 #/wp-content/themes
+
+# And explicitly extra ignore public_html
+/public_html/
+# VVV will hard reset and pull on provision,
+# and you will lose all your work
+# DANGER!!!
+
+# But don't ignore these files that VVV needs
+!.gitignore
+!README.md
+!/provision/vvv-init.sh
+!/provision/vvv-nginx-default.conf
